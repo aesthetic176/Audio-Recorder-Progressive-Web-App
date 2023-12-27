@@ -1,0 +1,73 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.button.stop {
+  background-color: #f44336; /* Red */
+}
+
+.button.stop:hover {
+  background-color: #da2c1f;
+}
+
+.audio-player {
+  margin-top: 20px;
+}
+
+audio {
+  max-width: 100%;
+  height: 32px;
+}
